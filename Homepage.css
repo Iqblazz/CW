@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 20px 40px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 80px; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.search-bar button {
+  background: transparent; 
+  color: black; 
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer; 
+}
+
+.cart-icon {
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.desc {
+  padding: 30px;
+  font-size: 22px;
+  text-align: left;
+  color: #f0f0f0;
+  background-color: #333;
+}
+
+.products {
+  padding: 20px;
+  margin-bottom: 90px;
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.product-list {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 50px;
+}
+
+.product-card{
+  margin-bottom: 30px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  color: orange;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 44px;
+  font-family: Arial, sans-serif; 
+  font-weight: bold;
+}
+
+.highlight {
+  color: #8A898A; 
+}
+
+.view-all-btn {
+  padding: 25px 56px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  width: 150px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer .section {
+  margin: 10px;
+  font-weight: 400;
+}
+
+footer .section h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+footer .section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+footer .section a:hover {
+  text-decoration: underline;
+}
+
+/* --- media screen rule --- */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .right-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .view-all-btn {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .section {
+    margin: 20px 0;
+  }
+
+  .logo {
+    height: 70px;
+  }
+}
+
+/* --- HOVER EFFECT TOMBOL VIEW ALL --- */
+.view-all-btn:hover {
+  background-color: #444; 
+  color: white;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* --- HOVER EFFECT UNTUK KARTU PRODUK --- */
+.product-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- HOVER EFFECT UNTUK HEADER --- */
+.logo:hover {
+  transform: scale(1.25); 
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

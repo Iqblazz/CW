@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 20px 40px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 80px; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.search-bar button {
+  background: transparent; 
+  color: black; 
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer; 
+}
+
+.cart-icon {
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.about h1 {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 19px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 19px;
+  margin: 30px 0 10px;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Assets/LOGO\ CW.png');
+  background-size: cover;        
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;                 
+  z-index: -8;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  width: 150px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer .section {
+  margin: 10px;
+  font-weight: 400;
+}
+
+footer .section h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+footer .section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+footer .section a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .right-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .about {
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .section {
+    margin: 20px 0;
+  }
+
+  .logo {
+    height: 70px;
+  }
+}

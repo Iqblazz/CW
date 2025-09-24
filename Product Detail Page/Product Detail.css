@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 20px 40px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 80px; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.search-bar button {
+  background: transparent; 
+  color: black; 
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer; 
+}
+.cart-icon {
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+.product-container {
+  display: flex;
+  padding: 92px;
+  gap: 88px;
+}
+
+.image-section img {
+  width: 500px;
+  border: 1px solid #ccc;
+}
+
+.details-section {
+  max-width: 1000px;
+}
+
+.details-section h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.rating {
+  color: #ffbf00;
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.rating span {
+  color: gray;
+}
+
+.in-stock {
+  color: #21fb4e !important;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 6px;
+  font-size: 24px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #000000;
+  margin: 16px 0;
+}
+
+.colours {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+  font-size: 24px;
+}
+
+.colour {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.black {
+  background: black;
+}
+
+.brown {
+  background: #8b4513;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 36px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.qty-btn {
+  padding: 0;
+  width: 60px;
+  height: 50px;
+  font-size: 28px;
+  border: none;
+  background: #f2f2f2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-input {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.quantity .qty-btn:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.quantity .qty-btn:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.buttons button {
+  padding: 20px 64px;
+  margin-right: 26px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+.add-to-cart {
+  background-color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.buy-now {
+  background-color: #007bff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.buy-now:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.footer-logo {
+  width: 150px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer .section {
+  margin: 10px;
+  font-weight: 400;
+}
+
+footer .section h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+footer .section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+footer .section a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  .right-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .details-section h2 {
+    font-size: 28px;
+  }
+
+  .price,
+  .description,
+  .colours,
+  .rating {
+    font-size: 18px;
+  }
+
+  .qty-btn,
+  .qty-input {
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .buttons button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .section {
+    margin: 20px 0;
+  }
+
+  .logo {
+    height: 70px;
+  }
+}
+
+.buttons button {
+  padding: 20px 64px;
+  margin-right: 26px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 24px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* --- HOVER EFFECT UNTUK LOGO --- */
+.logo:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
