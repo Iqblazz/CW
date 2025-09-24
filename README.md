@@ -59,10 +59,11 @@ The website consists of:
 
 ## 🚀 Run Locally
 
-Clone the repository
-git clone https://github.com/your-username/sinefolis.git
-Open the Landing Page/landing.html file in your browser
-Navigate through the pages via the header navigation
+1. Clone the repository
+``` git clone https://github.com/your-username/sinefolis.git```
+2. Open the Landing Page/landing.html file in your browser
+3. Navigate through the pages via the header navigation
+   
 Visit the live site here: https://cw-peach.vercel.app/
 Navigate through the pages via the header navigation
 
