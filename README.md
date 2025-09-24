@@ -1,9 +1,3 @@
-Got it ✅ I’ll draft a **README.md** in English based on the case requirements from your assignment and the folder structure you showed me.
-
-Here’s a polished version:
-
----
-
 # Christian Wijaya Luxury Fashion Website
 
 ## 📖 Project Overview
