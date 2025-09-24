@@ -65,18 +65,6 @@ The website consists of **5 pages**:
 
 ---
 
-## 🎨 Prototype Design
-
-* The prototype was designed in **Figma**.
-* Must include:
-
-  * Color & text styles
-  * Effects (shadow, blur, etc.)
-  * Components & variants
-  * Interactive navigation
-
----
-
 ## ⚙️ Technical Requirements
 
 * Use only **vanilla HTML, CSS, and JavaScript** (no frameworks).
