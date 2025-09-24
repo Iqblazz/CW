@@ -30,7 +30,6 @@ The website is expected to have a **luxury look, appealing design, fully functio
 │   └── homepage.css
 ├── Assets/                 # Images, videos, icons, and other assets
 ├── Figma/                  # Prototype design files created in Figma
-├── .gitattributes          # Git configuration
 ├── Asset Files.docx        # Documentation & references
 
 ```
