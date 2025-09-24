@@ -12,17 +12,27 @@ The website is expected to have a **luxury look, appealing design, fully functio
 ## 📂 Project Structure
 
 ```
-├── About Us Page/          # Contains About Us page files
+├── AboutUsPage/
+│   ├── about.html
+│   └── about.css
+├── ProductPage/
+│   ├── product.html
+│   └── product.css
+├── ProductDetailPage/
+│   ├── product-detail.html
+│   └── product-detail.css
+├── EventPage/
+│   ├── event.html
+│   ├── event.css
+│   └── EventValidation.js
+├── HomePage/
+│   ├── homepage.html
+│   └── homepage.css
 ├── Assets/                 # Images, videos, icons, and other assets
-├── Event/                  # Event page files
 ├── Figma/                  # Prototype design files created in Figma
-├── Product Detail Page/    # Product detail page files
-├── Product Page/           # Product listing page files
 ├── .gitattributes          # Git configuration
 ├── Asset Files.docx        # Documentation & references
-├── EventValidation.js      # JavaScript for form validation
-├── Homepage.css            # Styling for homepage
-├── homepage.html           # Homepage file
+
 ```
 
 ---
