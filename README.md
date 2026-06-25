@@ -25,24 +25,23 @@ The website consists of:
 ## 📂 Structure
 
 ```
-├── HomePage/
-│   ├── homepage.html
-│   └── homepage.css
-├── ProductPage/
-│   ├── product.html
-│   └── product.css
-├── ProductDetailPage/
-│   ├── product-detail.html
-│   └── product-detail.css
+├── AboutUsPage/
+│   ├── About_us.html
+│   └── About_Us.css
+├── Assets/         # Images, icons, videos
 ├── EventPage/
 │   ├── event.html
 │   ├── event.css
 │   └── EventValidation.js
-├── AboutUsPage/
-│   ├── about.html
-│   └── about.css
-├── Assets/         # Images, icons, videos
 ├── Figma/          # Prototype design
+├── ProductDetailPage/
+│   ├── product-detail.html
+│   └── product-detail.css
+├── ProductPage/
+│   ├── product.html
+│   └── product.css
+├── Homepage.css
+├── index.html
 └── Asset Files.docx (references & documentation)
 ```
 
