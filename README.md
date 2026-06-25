@@ -63,7 +63,7 @@ The website consists of:
 2. Open the Landing Page/landing.html file in your browser
 3. Navigate through the pages via the header navigation
    
-- Visit the live site here: https://cw-peach.vercel.app/
+- Visit the live site here: https://cw-luxury.vercel.app
 - Navigate through the pages via the header navigation
 
 ---
